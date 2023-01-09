@@ -1,24 +1,17 @@
-# webpack5
+# vue SSR with Webpack5
 
-## Project setup
+first, run `npm run build`, and next run `node scripts.js`, it will report an error like this:
 ```
-npm install
+[vue-router] Failed to resolve async component default: Error: Cannot find module '../js/index.63fb9d8d.js'
+Require stack:
+Require stack:
+- vueSSRwithWebpack5/node_modules/vue-server-renderer/build.dev.js
+- vueSSRwithWebpack5/node_modules/vue-server-renderer/index.js
+- vueSSRwithWebpack5/scripts.js
+[vue-router] uncaught error during route navigation:
+Error: Cannot find module '../js/index.63fb9d8d.js'
+Require stack:
+- vueSSRwithWebpack5/node_modules/vue-server-renderer/build.dev.js
+- vueSSRwithWebpack5/node_modules/vue-server-renderer/index.js
+- vueSSRwithWebpack5/scripts.js
 ```
-
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
-
-### Compiles and minifies for production
-```
-npm run build
-```
-
-### Lints and fixes files
-```
-npm run lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
